@@ -76,6 +76,9 @@ enum hmt_mode {
 #endif
 
 enum MDNIE_CMD {
+#if defined(CONFIG_PANEL_S6E3HA3_DYNAMIC) || defined(CONFIG_PANEL_S6E3HF3_DYNAMIC)
+	MDNIE_CMD3,
+#endif
 #if defined(CONFIG_EXYNOS_DECON_MDNIE_LITE)
 	LEVEL1_KEY_UNLOCK,
 	MDNIE_CMD1,
